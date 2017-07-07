@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ktugpr-browser's documentation!
+한국텍학회 사설저장소 탐색기입니다. (개발중)
 ==========================================
 
 Contents:
