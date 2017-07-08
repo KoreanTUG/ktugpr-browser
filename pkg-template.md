@@ -6,6 +6,7 @@ version:
 license: 
 maintainer: 
 github_repo_url: 
+thumbnail: 
 ---
 
 contents...

@@ -25,5 +25,8 @@ layout: default
   </table>
 </header>
 <section>
+{% if page.thumbnail %}
+  ![Thumbnail of {{ page.pkg_name }}](./img/pkg/{{ page.thumbnail }})
+{% endif %}
 {{ content }}
 </section>
