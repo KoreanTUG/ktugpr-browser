@@ -26,7 +26,7 @@ layout: default
 </header>
 <section>
 {% if page.thumbnail %}
-  ![Thumbnail of {{ page.pkg_name }}](./img/pkg/{{ page.thumbnail }})
+  <img src="./img/pkg/{{ page.thumbnail }}" alt="Thumbnail of {{ page.pkg_name }}">
 {% endif %}
 {{ content }}
 </section>
