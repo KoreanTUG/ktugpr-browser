@@ -5,26 +5,25 @@ layout: default
 <header>
   <h1>{{ page.pkg_name }}</h1>
   <p>{{ page.pkg_description }}</p>
-  {{ content }}  
+  <table>
+    <tr>
+      <td> Repository </td>
+      <td> {% if page.github_repo_url %}<a href="{{ page.github_repo_url }}">{{ page.github_repo_url }}</a>{% else %} Unspecified {% endif %} </td>
+    </tr>
+    <tr>
+      <td> Version </td>
+      <td> {% if page.version %}{{ page.version }}{% else %} Unspecified {% endif %} </td>
+    </tr>
+    <tr>
+      <td> License </td>
+      <td> {% if page.license %}{{ page.license }}{% else %} Unspecified {% endif %} </td>
+    </tr>
+    <tr>
+      <td> Maintainer </td>
+      <td> {% if page.maintainer %}{{ page.maintainer }}{% else %} Unspecified {% endif %} </td>
+    </tr>
+  </table>
 </header>
 <section>
-<table>
-  <tr>
-    <td> Repository </td>
-    <td> {% if page.github_repo_url %}<a href="{{ page.github_repo_url }}">{{ page.github_repo_url }}</a>{% else %} Unspecified {% endif %} </td>
-  </tr>
-  <tr>
-    <td> Version </td>
-    <td> {% if page.version %}{{ page.version }}{% else %} Unspecified {% endif %} </td>
-  </tr>
-  <tr>
-    <td> License </td>
-    <td> {% if page.license %}{{ page.license }}{% else %} Unspecified {% endif %} </td>
-  </tr>
-  <tr>
-    <td> Maintainer </td>
-    <td> {% if page.maintainer %}{{ page.maintainer }}{% else %} Unspecified {% endif %} </td>
-  </tr>
-</table>
-
+{{ content }}
 </section>
