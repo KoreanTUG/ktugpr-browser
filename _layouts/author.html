@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ page.authorname }}</h1>
+  <p>{{ page.email_local_part }} (at) {{ page.email_domain | replace: '.', ' (dot) ' }} </p>
+</header>
+<section>
+<h2>Works of {{ page.authorname }}</h2>
+{% for pkg in site.pages %}
+{% if pkg.layout == 'package' %}
+{% for search in pkg.maintainer %}
+{% assign searchpath = 'author/' | append: search | append: '.md' %}
+{% if searchpath == page.path %}
+- <a href="../pkg/{{ pkg.pkg_name }}">{{ pkg.pkg_name }}</a> : {{ pkg.pkg_summary }}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+</section>

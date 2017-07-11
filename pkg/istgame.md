@@ -1,10 +1,12 @@
 ---
 layout: package
 pkg_name: istgame
-pkg_description: Drawing Game Trees with TikZ
+pkg_summary: Drawing Game Trees with TikZ
 version: 0.9
 license:
 maintainer:
+  - ischo
+  - author-template
 github_repo_url: 
 thumbnail: istgame.png
 ---

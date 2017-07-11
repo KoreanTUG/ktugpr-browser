@@ -1,11 +1,27 @@
 ---
 layout: package
+
+# Name of package - **.sty
 pkg_name: 
-pkg_description: 
+
+# Short summary of package
+pkg_summary: 
+
+# Version of package
 version: 
+
+# License of package
 license: 
+
+# Maintainer of package (can be listed if many)
 maintainer: 
-github_repo_url: 
+  -
+
+# Repository of package
+repo_url: 
+
+# Thumbnail image of package
+# File extension should be included, and image should be placed at /img/pkg.
 thumbnail: 
 ---
 
