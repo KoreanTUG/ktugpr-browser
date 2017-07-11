@@ -8,7 +8,7 @@ description: 한국텍학회 사설저장소 브라우저
 
 {% for page in site.pages %}
 {% if page.layout == 'package' %}
-- <a href="{{ page.path }}">{{ page.pkg_name }}</a> : {{ page.pkg_summary }}
+- <a href="{{ page.path | replace: '.md', '' }}">{{ page.pkg_name }}</a> : {{ page.pkg_summary }}
 {% endif %}
 {% endfor %}
 
@@ -16,6 +16,6 @@ description: 한국텍학회 사설저장소 브라우저
 
 {% for page in site.pages %}
 {% if page.layout == 'author' %}
-- <a href="{{ page.path }}">{{ page.authorname }}</a>
+- <a href="{{ page.path | replace: '.md', '' }}">{{ page.authorname }}</a>
 {% endif %}
 {% endfor %}
