@@ -17,6 +17,7 @@
       {{ content }}
 
       <footer>
+        <p> <a href="{{ '/' | relative_url }}">Home</a> | <a href="{{ '/#packages' | relative_url }}">List of packages</a> | <a href="{{ '/#authors' | relative_url }}">List of authors</a> </p>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
