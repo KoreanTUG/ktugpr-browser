@@ -3,3 +3,6 @@ description: Minimal is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: 
+exclude:
+  - pkg/pkg-template.md
+  - author/author-template.md

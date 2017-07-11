@@ -6,7 +6,6 @@ version: 0.9
 license:
 maintainer:
   - ischo
-  - author-template
 github_repo_url: 
 thumbnail: istgame.png
 ---
