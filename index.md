@@ -4,7 +4,7 @@ title: KTUG PR browser
 description: 한국텍학회 사설저장소 브라우저
 ---
 
-## <a id="packages">List of available packages</a>
+## <a id="packages"></a>List of available packages
 
 {% for page in site.pages %}
 {% if page.layout == 'package' %}
@@ -12,7 +12,7 @@ description: 한국텍학회 사설저장소 브라우저
 {% endif %}
 {% endfor %}
 
-## <a id="authors">List of authors</a>
+## <a id="authors"></a>List of authors
 
 {% for page in site.pages %}
 {% if page.layout == 'author' %}
