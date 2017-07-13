@@ -7,14 +7,16 @@ layout: default
 </header>
 <section>
 <h2>Works of {{ page.authorname }}</h2>
+<ul>
 {% for pkg in site.pages %}
 {% if pkg.layout == 'package' %}
 {% for search in pkg.maintainer %}
 {% assign searchpath = 'author/' | append: search | append: '.md' %}
 {% if searchpath == page.path %}
-- <a href="../pkg/{{ pkg.pkg_name }}">{{ pkg.pkg_name }}</a> : {{ pkg.pkg_summary }}
+<li><a href="../pkg/{{ pkg.pkg_name }}">{{ pkg.pkg_name }}</a> : {{ pkg.pkg_summary }}</li>
 {% endif %}
 {% endfor %}
 {% endif %}
 {% endfor %}
+</ul>
 </section>
