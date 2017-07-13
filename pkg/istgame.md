@@ -1,12 +1,27 @@
 ---
 layout: package
+
+# Name of package - **.sty
 pkg_name: istgame
+
+# Short summary of package
 pkg_summary: Drawing Game Trees with TikZ
+
+# Version of package
 version: 0.9
-license:
-maintainer:
+
+# License of package
+license: 
+
+# Maintainer of package (can be listed if many)
+maintainer: 
   - ischo
-github_repo_url: 
+
+# Repository of package
+repo_url: 
+
+# Thumbnail image of package
+# File extension should be included, and image should be placed at /img/pkg.
 thumbnail: istgame.png
 ---
 
