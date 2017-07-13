@@ -3,12 +3,11 @@ layout: default
 ---
 <header>
   <h1>{{ page.authorname }}</h1>
-  <ul>
-  <p><li>Email : {% if page.email_local_part and page.email_domain %}
+  <p>Email : {% if page.email_local_part and page.email_domain %}
   {{ page.email_local_part }} (at) {{ page.email_domain | replace: '.', ' (dot) ' }}
-  {% else %} Not public {% endif %}</li></p>
+  {% else %} Not public {% endif %}</p>
   
-  </ul>
+  
 </header>
 <section>
 <h2>Works of {{ page.authorname }}</h2>
