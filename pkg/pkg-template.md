@@ -23,6 +23,9 @@ repo_url:
 # Thumbnail image of package
 # File extension should be included, and image should be placed at /img/pkg.
 thumbnail: 
+
+# Filename of documentation at <pkg_name>/doc/latex/<pkg_name>/
+doc: 
 ---
 
 contents...

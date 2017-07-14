@@ -23,6 +23,10 @@ repo_url:
 # Thumbnail image of package
 # File extension should be included, and image should be placed at /img/pkg.
 thumbnail: hnja2hngl.png
+
+# Filename of documentation at <pkg_name>/doc/latex/<pkg_name>/
+# File extension(.pdf) should be included.
+doc: hnja2hngl-doc.pdf
 ---
 
 이 패키지의 제작에 얽힌 사연事緣은 http://www.ktug.org/xe/index.php?document_srl=204424&mid=KTUG_open_board을 볼 것.
