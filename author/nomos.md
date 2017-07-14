@@ -10,4 +10,7 @@ email_local_part: nomos
 
 # Domain of email address, i.e. example.com
 email_domain: ktug.org
+
+# GitHub handle
+github_handle: dohyunkim
 ---

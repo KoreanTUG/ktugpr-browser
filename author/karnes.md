@@ -2,7 +2,7 @@
 layout: author
 
 # Full name of author
-authorname:
+authorname: Karnes Kim
 
 # Email address, i.e. user@example.com
 # Local part of email address, i.e. user

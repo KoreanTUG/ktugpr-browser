@@ -3,10 +3,18 @@ layout: default
 ---
 <header>
   <h1>{{ page.authorname }}</h1>
-  <p>Email : {% if page.email_local_part and page.email_domain %}
+  <table>
+    <tr>
+      <td> Email </td>
+      <td> {% if page.email_local_part and page.email_domain %}
   {{ page.email_local_part }} (at) {{ page.email_domain | replace: '.', ' (dot) ' }}
-  {% else %} Not public {% endif %}</p>
-  
+  {% else %} Not public {% endif %} </td>
+    </tr>
+    <tr>
+      <td> GitHub </td>
+      <td> {% if page.github_handle %} <a href="https://github.com/{{ page.github_handle }}">{{ page.github_handle }}</a> {% else %} None {% endif %} </td>
+    </tr>
+  </table>
   
 </header>
 <section>

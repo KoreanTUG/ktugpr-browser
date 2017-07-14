@@ -10,4 +10,7 @@ email_local_part:
 
 # Domain of email address, i.e. example.com
 email_domain: 
+
+# GitHub handle
+github_handle: 
 ---
