@@ -14,7 +14,8 @@ description: 한국텍학회 사설저장소 브라우저
 
 ## <a id="authors"></a>List of authors
 
-{% for page in site.pages %}
+{% assign items = site.pages | sort: 'authorname' %}
+{% for page in items %}
 {% if page.layout == 'author' %}
 - <a href="{{ page.path | replace: '.md', '' }}">{{ page.authorname }}</a>
 {% endif %}
