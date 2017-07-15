@@ -1,7 +1,7 @@
 title: KTUG PR browser
 description: 한국텍학회 사설저장소 브라우저
 show_downloads: true
-google_analytics:
+google_analytics: UA-101585306-2
 theme: 
 exclude:
   - pkg/pkg-template.md
