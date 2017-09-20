@@ -11,7 +11,7 @@ layout: default
       <td> {% if page.version %}{{ page.version }}{% else %} Unspecified {% endif %} </td>
     </tr>
     <tr>
-      <td> License </td>
+      <td style="vertical-align: top"> License </td>
       <td> {% if page.license %}{{ page.license }}{% else %} Unspecified {% endif %} </td>
     </tr>
     <tr>
@@ -29,6 +29,12 @@ layout: default
         {% else %} Unspecified {% endif %}
       </td>
     </tr>
+    {% if page.repo_url %}
+    <tr>
+      <td style="vertical-align: top"> GitHub repo. </td>
+      <td> <a href="{{ page.repo_url }}"></a>{{ page.repo_url | replace: "https://github.com/", "" }}</td>
+    </tr>
+    {% endif %}
   </table>
   <ul>
     <li><a href="https://raw.githubusercontent.com/KoreanTUG/KTUGPrivateRepo/master/archive/{{ page.pkg_name }}.doc/doc/latex/{{ page.pkg_name }}/{{ page.doc }}">View <strong>pkg doc.</strong></a></li>
