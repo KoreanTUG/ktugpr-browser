@@ -33,8 +33,9 @@ layout: default
   <ul>
     <li><a href="https://raw.githubusercontent.com/KoreanTUG/KTUGPrivateRepo/master/archive/{{ page.pkg_name }}.doc/doc/latex/{{ page.pkg_name }}/{{ page.doc }}">View <strong>pkg doc.</strong></a></li>
     <li><a href="https://raw.githubusercontent.com/KoreanTUG/KTUGPrivateRepo/master/archive/{{ page.pkg_name }}.tar.xz">Download <strong>TAR.XZ</strong></a></li>
-    <li>{% if page.repo_url %} <a href="{{ page.repo_url }}">View On <strong>GitHub</strong></a> {% endif %}</li>
+    <li><a href="https://raw.githubusercontent.com/KoreanTUG/KTUGPrivateRepo/master/archive/{{ page.pkg_name }}.doc.tar.xz">Download <strong>DOC.TAR.XZ</strong></a></li>
   </ul>
+  {% if page.repo_url %} <p><a href="{{ page.repo_url }}">View On <strong>GitHub</strong></a></p> {% endif %}
 </header>
 <section>
 {% if page.thumbnail %}
