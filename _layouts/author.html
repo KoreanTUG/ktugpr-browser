@@ -25,7 +25,7 @@ layout: default
 {% for search in pkg.maintainer %}
 {% assign searchpath = 'author/' | append: search | append: '.md' %}
 {% if searchpath == page.path %}
-<li><a href="../pkg/{{ pkg.pkg_name }}">{{ pkg.pkg_name }}</a> : {{ pkg.pkg_summary }}</li>
+<li><a href="../pkg/{{ pkg.pkg_name }}">{{ pkg.pkg_name }}</a>: {{ pkg.pkg_summary }}</li>
 {% endif %}
 {% endfor %}
 {% endif %}
