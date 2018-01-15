@@ -8,7 +8,7 @@ pkg_name: graphicsonthefly
 pkg_summary: Import and include graphics from url
 
 # Version of package
-version: 2015-04-20
+version: 2017-11-26
 
 # License of package
 license: 
