@@ -26,6 +26,6 @@ thumbnail:
 
 # Filename of documentation at <pkg_name>/doc/latex/<pkg_name>/
 # File extension(.pdf) should be included.
-doc: ksbaduk-doc.pdf
+doc: ksruby-doc.pdf
 ---
 
